@@ -7,6 +7,7 @@ package paquete7;
 
 public class FacturaTelefonica {
 
+
     private String numeroTelefono;
     private double minutosMes;
     private double valorMinuto;
@@ -60,5 +61,19 @@ public class FacturaTelefonica {
     public double obtenerValorFactura() {
         return valorFactura;
     }
-
+   
+    @Override
+     public String toString() {
+    String cadena = String.format("Número telefónico: %s\nMinutos mes: %.2f\nValor minuto: %.2f\nValor factura: %.2f\n",
+            obtenerNumeroTelefono(),
+            obtenerMinutosMes(),
+            obtenerValorMinuto(),
+            obtenerValorFactura(),"Número telefónico: %s\n"
+                + "Minutos mes: %.2f\nValor minuto: %.2f\n"
+                + "Valor factura: %.2f\n"+obtenerNumeroTelefono(),
+               obtenerMinutosMes(),
+               obtenerValorMinuto(),
+               obtenerValorFactura());
+    return cadena;
+}
 }
