@@ -15,6 +15,13 @@ public class Hospital {
     private int numeroDoctores;
     private int numeroEnfermeros;
     
+    // Constructor sin parámetros
+    public Hospital() {
+        nombre = "Isidro Ayora";
+        ciudad = "Loja";
+        numeroDoctores = 100;
+        numeroEnfermeros = 200;
+    }
     /*
         Crear un constructor que no tenga parámetros
         y que asigne valores ya establecidos a todos 
